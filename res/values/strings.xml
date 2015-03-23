@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- In app strings -->
+    <string name="app_name">PowerLogger</string>
+    <string name="logging">Logging&#8230;</string>
+    <string name="finished">PowerLogger finished logging</string>
+    <string name="header">Date, mA, V, W, percentage, processes</string>
+
+    <!--  Preference strings -->
+    <string name ="shared_prefs_name">powerLoggerPrefs</string>
+    <string name="pref_log_filename_key">log_filename</string>
+    <string name="pref_log_apps_key">log_apps</string>
+    <string name="pref_interval_key">interval</string>
+    <string name="clear_log">clear_log</string>
+</resources>

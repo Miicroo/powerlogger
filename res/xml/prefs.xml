@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="General">
+        <EditTextPreference
+            android:defaultValue="1000"
+            android:inputType="number"
+            android:key="@string/pref_interval_key"
+            android:summary="Number of milliseconds between readings"
+            android:title="Update interval" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Log" >
+        
+        <EditTextPreference
+                android:defaultValue="/sdcard/powerlogger.log"                
+                android:key="@string/pref_log_filename_key"
+                android:summary="Where to save the log file"
+                android:title="Log filename" />
+         <CheckBoxPreference
+             android:defaultValue="false"
+             android:key="@string/pref_log_apps_key"
+             android:title="Log running applications" />
+         <Preference
+         	android:key="@string/clear_log"
+         	android:title="Delete log file" />
+    </PreferenceCategory>
+</PreferenceScreen>
