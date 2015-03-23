@@ -1,5 +1,5 @@
-# powerlogger
-This is powerlogger, a logging tool that measures energy consumption on Android smartphones.
+# PowerLogger
+This is PowerLogger, a logging tool that measures energy consumption on Android smartphones.
 Most phones are not supported, just try it and see. If it works it works.
 Reading current data is taken from CurrentWidget (see https://code.google.com/p/currentwidget/)
 
@@ -12,3 +12,7 @@ Settings include:
 * Delete existing log file
 
 Log file is a csv file consisting of: date, current, voltage, power, battery percentage and processes
+
+Note that PowerLogger cannot monitor the system when it is idle, since the system is... idle.
+
+Currently working version 1.0.
