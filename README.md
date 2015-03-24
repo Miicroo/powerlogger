@@ -16,3 +16,19 @@ Log file is a csv file consisting of: date, current, voltage, power, battery per
 Note that PowerLogger cannot monitor the system when it is idle, since the system is... idle.
 
 Currently working version 1.0.
+
+To parse log files use battery_estimator.py
+Requires python 2.7 with libraries:
+dateutil (required for mpl)
+matplotlib
+numpy (required for mpl)
+pandas (required for statsmodels)
+patsy (required for statsmodels)
+pyparsing (required for mpl)
+pytz (required for mpl)
+setuptools (required for mpl)
+six (required for mpl)
+statsmodels.api
+
+Usage python battery_estimator.py --include W A V --smoothen W A V --processes y/n
+W A V stands for power, current, voltage.
