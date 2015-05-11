@@ -22,7 +22,7 @@ public class BackgroundService extends Service {
 	private SharedPreferences settings;
 	
 	// Logging variables
-	private static Timer timer = new Timer();
+	private static Timer timer;
 	private FileLogger logger;
 	
 	@Override
@@ -68,6 +68,7 @@ public class BackgroundService extends Service {
 	 * timer isn't cancelled.
 	 */
 	private void startWork() {
+		timer = new Timer();
 		timer.scheduleAtFixedRate (
 			new TimerTask() {
 				public void run() {
