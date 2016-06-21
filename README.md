@@ -30,5 +30,5 @@ Requires python 2.7 with libraries:
 * six (required for mpl)
 * statsmodels.api
 
-Usage python battery_estimator.py --include W A V --smoothen W A V --processes y/n
+Usage python battery_estimator.py --include W A V --smoothen W A V --processes y/n  
 W A V stands for power, current, voltage.
